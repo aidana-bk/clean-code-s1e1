@@ -8,50 +8,53 @@
 </head>
 
 <body class="page">
-  <header class="app-header">
-    <img src="./eisenhower-matrix.jpg" alt="image of eisenhower matrix">
-    <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">
+  <header class="page__header">
+    <img class="page__header-image" src="./eisenhower-matrix.jpg" alt="image of eisenhower matrix">
+    <a class="page__header-info" href="https://goal-life.com/page/method/matrix-eisenhower">
       Want more details?
     </a>
   </header>
-  <main class="main-block">
-    <section id="add-task">
-      <label class="heading2 label-text" for="new-task">Add Item</label>
-      <div class="add-new-task">
-        <input id="new-task" class="task-text" type="text">
-        <button class="button">Add</button>
+  <main class="main">
+    <section id="main__add-task">
+      <label class="main__heading2 main__label" for="new-task">
+        Add Item
+      </label>
+      <div class="main__add-task-container">
+        <input id="new-task" class="main__task-text" type="text">
+        <button class="main__button">Add</button>
       </div>
     </section>
-    <section>
-      <h3 class="heading3">Todo</h3>
-      <ul class="tasks-lists" id="incomplete-tasks">
-        <li class="task">
-          <input class="input" type="checkbox">
-          <label for="incomplete-task" class="label-text task-text">Pay Bills</label>
-          <input id="incomplete-task" type="text" class="input task-text">
-          <button class="button edit-task">Edit</button>
-          <button class="button delete-task">
+
+    <section class="main__todo">
+      <h3 class="main__heading3">Todo</h3>
+      <ul class="main__todo-tasks-lists" id="incomplete-tasks">
+        <li class="main__todo-task">
+          <input class="main__input" type="checkbox">
+          <label for="incomplete-task" class="main__label main__task-text">Pay Bills</label>
+          <input id="incomplete-task" type="text" class="main__input main__task-text">
+          <button class="main__button main__todo-edit-task">Edit</button>
+          <button class="main__button main__todo-delete-task">
             <img src="./remove.svg" alt="image of delete button">
           </button>
         </li>
-        <li class="task edit-mode">
-          <input class="input" type="checkbox">
-          <label for="edit-task" class="label-text task-text">Go Shopping</label>
-          <input id="edit-task" type="text" value="Go Shopping" class="input task-text">
-          <button class="button edit-task">Save</button>
-          <button class="button delete-task"><img src="./remove.svg"></button>
+        <li class="main__todo-task main__todo-edit-mode">
+          <input class="main__input" type="checkbox">
+          <label for="edit-task" class="main__label main__task-text">Go Shopping</label>
+          <input id="edit-task" type="text" value="Go Shopping" class="main__input main__task-text">
+          <button class="main__button main__todo-edit-task">Save</button>
+          <button class="main__button main__todo-delete-task"><img src="./remove.svg"></button>
         </li>
       </ul>
     </section>
-    <section>
-      <h3 class="heading3">Completed</h3>
-      <ul class="tasks-lists" id="completed-tasks">
-        <li class="task">
-          <input class="input" type="checkbox" checked>
-          <label for="complete-task" class="task-text">See the Doctor</label>
-          <input id="complete-task" type="text" class="input task-text">
-          <button class="button edit-task">Edit</button>
-          <button class="button delete-task">
+    <section class="main__todo">
+      <h3 class="main__heading3">Completed</h3>
+      <ul class="main__todo-tasks-lists" id="completed-tasks"> 
+        <li class="main__todo-task">
+          <input class="main__input" type="checkbox" checked>
+          <label for="complete-task" class="main__task-text">See the Doctor</label>
+          <input id="complete-task" type="text" class="main__input main__task-text">
+          <button class="main__button main__todo-edit-task">Edit</button>
+          <button class="main__button main__todo-delete-task">
             <img src="./remove.svg" alt="image of remove button">
           </button>
         </li>
