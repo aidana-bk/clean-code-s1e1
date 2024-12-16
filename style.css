@@ -61,7 +61,7 @@
 }
 /* Heading */
 .heading3,
-.label-text[for="new-task"] {
+.heading2 {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -87,7 +87,7 @@
 }
 
 /* New Task */
-.label-text[for="new-task"] {
+.heading2 {
   display: block;
   margin: 0 0 20px;
 }
